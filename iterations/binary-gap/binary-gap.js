@@ -5,7 +5,7 @@ function solution(N) {
     let gapArr = Number(N).toString(2).split('1');
 
     if (gapArr[gapArr.length -1] !== '') {
-        gapArr.pop();
+        gapArr.pop()
     }
 
     return gapArr.reduce((acc, val) => acc < val.length ? val.length : acc, 0);
@@ -15,3 +15,4 @@ function solution(N) {
 console.log(solution(6) === 0);
 console.log(solution(51712) === 2);
 console.log(solution(20) === 1);
+console.log(solution(15) === 0);
